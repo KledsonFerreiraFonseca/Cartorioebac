@@ -135,7 +135,8 @@ int main()//"função principal" esta é o inicio do cabeçalho do programa
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Registra nomes\n");// "\t" e para dar espaçamento no inicio da linha.
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t3 - Deletar nomes\n\n");
+		printf("\t4 - Sair do sistema\n\n");
 		printf("Opção:"); //Fim do menu
 	
 		scanf("%d",&opcao); //"scanf"armazenar, "%d" para armazenar do tipo inteiro(int), referenciar na variável "&opção". Armazenando o que o usuário coloca no sistema.
@@ -155,6 +156,11 @@ int main()//"função principal" esta é o inicio do cabeçalho do programa
 			
 			case 3:// caso 03
 			deletar();//chamada de funções deletar
+			break;
+			
+			case 4:// caso 04
+			printf("Obrigado por utilizar o sistema!\n"); //sair do sistema.
+			return 0;// retonar ao valor zero para quebra laço, função e tudo mais p/ sair do sistema.
 			break;
 			
 			default://opção invalida
